@@ -1,6 +1,6 @@
 import './style.css'
 
-import {AmbientLight, MathUtils, GridHelper, Mesh, MeshStandardMaterial, PerspectiveCamera, PointLight, Scene, SphereGeometry, TorusGeometry, WebGLRenderer, PointLightHelper, TextureLoader, MeshBasicMaterial, BoxGeometry, ShapeGeometry, Shape} from 'three';
+import {AmbientLight, MathUtils, Mesh, MeshStandardMaterial, PerspectiveCamera, PointLight, Scene, SphereGeometry, TorusGeometry, WebGLRenderer, TextureLoader, MeshBasicMaterial, BoxGeometry} from 'three';
 //import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
 // Setup
@@ -36,22 +36,6 @@ const Pitt = new Mesh(heart,heartMaterial);
 scene.add(Pitt);
 Pitt.position.z=120;
 Pitt.position.x=-50;
-
-function heartShape(){
-  const x = 0, y = 0;
-
-  const heartShape = new Shape();
-
-  heartShape.moveTo( x + 5, y + 5 );
-  heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
-  heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6,y + 7 );
-  heartShape.bezierCurveTo( x - 6, y + 11, x - 2, y + 15, x + 5, y + 19 );
-  heartShape.bezierCurveTo( x + 12, y + 15, x + 16, y + 11, x + 16, y + 7 );
-  heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
-  heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
-
-  return heartShape
-}
 
 function addStar() {
   const geometry = new SphereGeometry(0.25, 24, 24);
@@ -96,12 +80,6 @@ moveCamera();
 function animate(){
   requestAnimationFrame(animate);
 
-
-  // stars.map((star)=>{
-  //   star.position.y -= .01;
-  // })
-  //controls.update();
-
   torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
@@ -110,9 +88,7 @@ function animate(){
   sam.rotation.y += 0.005;
   sam.rotation.z += 0.01;
 
-  //Pitt.rotation.x += 0.01;
   Pitt.rotation.y += 0.05;
-  // Pitt.rotation.z += 0.01;
 
   renderer.render(scene, camera);
 }
