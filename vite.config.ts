@@ -4,5 +4,5 @@ export default defineConfig({
     // build: {
     //     outDir: "./build"
     // },
-    base: "/Website3.0/"
+    //base: "/Website3.0/"
 })
