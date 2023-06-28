@@ -1,86 +1,107 @@
-canvas{
-  position:fixed;
-  top: 0;
-  left:0;
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
+main {
+    width: 98vw;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    margin: 0px auto;
+    padding: 120px 0px;
 
-main{
-  width: 100vw;
-  color: white;
-  z-index: 99;
-  position: absolute;
-  width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 p,
 h2,
-h3,h1 {
-  color: lawngreen;
-  margin: 0.1em;
-  font-family: "Lucida Console", "Courier New", monospace;
+h3,
+h1 {
+    color: lawngreen;
+    margin: 0.1em;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
-i{
-  color:lawngreen;
+i {
+    color: lawngreen;
+    font-size: 2vw;
 }
 
-section{
-  grid-column: 2/ span 10;
-  padding: 2rem;
-  margin-bottom: 500px;
-  margin-top: 200px;
+section {
+    grid-column: 2 / span 10;
+    padding: 2rem;
+    margin-bottom: calc(100px + 24.414vw);
+    margin-top: calc(100px + 9.766vw);
 }
 
-.welcome{
-  grid-column: 5 /span 5;
-  font-size: 2.5rem;
-  background-color: black;
-  text-align: center;
+.welcome {
+    grid-column: 5 / span 5;
+    font-size: calc(16px + 3.5vw);
+    background-color: black;
+    text-align: center;
 }
 
-.contact{
-  grid-column: 5 /span 5;
-  font-size: 2.5rem;
-  background-color: black;
-  text-align: center;
-  margin-bottom:200px;
+.contact {
+    grid-column: 4 / span 7;
+    font-size: calc(8px + 2vw);
+    background-color: black;
+    text-align: center;
+    margin-bottom: 9.766vw;
 }
 
-.intro{
-  grid-column: 8/ span 4;
-  font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  margin-bottom: 200px;
+.intro {
+    grid-column: 8 / span 4;
+    font-size: calc(8px + 1.5vw);
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 9.766vw;
 }
 
-.exp{
-  grid-column: 2 / span 6;
-  padding: 1rem;
-  font-size: 1.25rem;
+.exp {
+    grid-column: 2 / span 6;
+    padding: 1rem;
+    font-size: calc(8px + 1vw);
 }
 
-.ed{
-  grid-column: 6 / span 6;
-  padding: 1rem;
-  font-size: 1.25rem;
-  background: rgba(0, 0, 0, 0.5);
+.ed {
+    grid-column: 6 / span 6;
+    padding: 1rem;
+    font-size: calc(8px + 1vw);
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.tab1{
-  margin-left:1em;
+.tab1 {
+    margin-left: 1em;
 }
-.tab2{
-  margin-left:2em;
+.tab2 {
+    margin-left: 2em;
 }
-.tab3{
-  margin-left:3em;
+.tab3 {
+    margin-left: 3em;
 }
-.tab4{
-  margin-left:4em;
+.tab4 {
+    margin-left: 4em;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lawngreen;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: greenyellow;
 }
