@@ -101,7 +101,7 @@ function animate() {
     torus.rotation.y += 0.005;
     torus.rotation.z += 0.01;
 
-    sam.position.z = 0.03 * window.innerWidth;
+    sam.position.z = window.innerWidth > 400 ? 0.03 * window.innerWidth : 0.1 * window.innerWidth;
     sam.position.x = -0.003 * window.innerWidth;
     sam.position.y = 0.001 * window.innerHeight;
 
@@ -109,7 +109,7 @@ function animate() {
     sam.rotation.y += 0.005;
     sam.rotation.z += 0.01;
 
-    Pitt.position.z = 0.1 * window.innerWidth;
+    Pitt.position.z = window.innerWidth > 400 ? 0.1 * window.innerWidth : 0.25 * window.innerWidth;
     Pitt.position.x = -0.05 * window.innerWidth;
 
     Pitt.rotation.y += 0.05;

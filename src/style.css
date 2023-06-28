@@ -27,7 +27,6 @@ h1 {
 
 i {
     color: lawngreen;
-    font-size: 2vw;
 }
 
 section {
@@ -38,8 +37,8 @@ section {
 }
 
 .welcome {
-    grid-column: 5 / span 5;
-    font-size: calc(16px + 3.5vw);
+    grid-column: 4 / span 6;
+    font-size: calc(16px + 3vw);
     background-color: black;
     text-align: center;
 }
